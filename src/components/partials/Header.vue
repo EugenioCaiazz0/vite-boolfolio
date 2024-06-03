@@ -5,9 +5,9 @@
 <template>
   <div class="header container-fluid">
     <nav>
-      <li class=""><router-link class="li-style btn btn-outline-secondary" :to="{name:'home'}">Home</router-link></li>
-      <li class=""><router-link class="li-style btn btn-outline-secondary" :to="{name:'about'}">About</router-link></li>
-      <li class=""><router-link class="li-style btn btn-outline-secondary" :to="{name:'projects'}">Projects</router-link></li>
+      <li class=""><router-link class="li btn " :to="{name:'home'}">Home</router-link></li>
+      <li class=""><router-link class="li btn " :to="{name:'about'}">About</router-link></li>
+      <li class=""><router-link class="li btn " :to="{name:'projects'}">Projects</router-link></li>
     </nav>
   </div>
 </template>
@@ -21,11 +21,16 @@
     display: flex;
     width: 100%;
     list-style: none;
-    .li-style {
+    .li {
       text-decoration: none;
-      color: white;
+      color: red;
       text-align: center;
+      padding: 0 20 px;
+      &.active{
+        color: yellow;
+        }
     }
   }
 }
+
 </style>

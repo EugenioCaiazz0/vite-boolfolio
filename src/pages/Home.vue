@@ -8,7 +8,7 @@ export default{
 
 <template>
     <div>
-        Home
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam odio atque velit veniam impedit cumque hic minus perspiciatis, repudiandae et unde quidem neque quis sit? Deserunt voluptatum maxime delectus.</p>
     </div>
 </template>
 
