@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="header">
+  <div class="header container-fluid">
     <nav>
       <li class=""><router-link class="li-style btn btn-outline-secondary" :to="{name:'home'}">Home</router-link></li>
       <li class=""><router-link class="li-style btn btn-outline-secondary" :to="{name:'about'}">About</router-link></li>
@@ -16,10 +16,10 @@
 .header{
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: skyblue;
   nav{
     display: flex;
+    width: 100%;
     list-style: none;
     .li-style {
       text-decoration: none;

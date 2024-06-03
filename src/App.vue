@@ -1,12 +1,14 @@
 <script>
 
 import axios from 'axios';
-import Header from 'src/components/partials/Header.vue';
+import Header from './components/partials/Header.vue';
 
 export default {
-  methods: {
-    components: {
+  components: {
       Header
+  },
+  /*methods: {
+   
     },
     data() {
       return {
@@ -17,27 +19,22 @@ export default {
       axios.get("http://127.0.0.1:8000/api/projects")
       .then ( result => this.projects = result.data
       )
-    },
-  },
+    },*/
   mounted(){
-   this.getApi()
+   /*this.getApi()*/
   }
 }
 </script>
 
 <template>
   <div class="main-wrapper">
-   
-   <ul>
-    <li v-for="project in projects" 
-    :key="project.id">
-      {{$project.title}} 
-      <!--{{$project.author}} 
-      {{$project.date_of_creation}} 
-      {{$project.description}} -->
-    </li>
-   </ul>
-
+   <div class="container-fluid">
+    <Header />
+   </div>
+   <div>
+    <RouterView></RouterView>
+   </div>
+  
   </div>
 </template>
 
