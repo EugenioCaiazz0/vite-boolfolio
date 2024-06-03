@@ -1,9 +1,13 @@
 <script>
 
 import axios from 'axios';
+import Header from 'src/components/partials/Header.vue';
 
 export default {
   methods: {
+    components: {
+      Header
+    },
     data() {
       return {
         'projects': []
